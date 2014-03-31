@@ -1,0 +1,46 @@
+
+// blender material: grass-a-3
+material grass-a-3 
+{
+    receive_shadows on
+    technique b2ogre_1323956836.687
+    {
+        pass b2ogre_1323956836.687
+        {
+            ambient 0.2823529541492462 0.3686274588108063 0.13333334028720856 1.0
+            diffuse 0.22588236668530648 0.29490197144302677 0.10666667381922412 1.0
+            specular 0.04901960864663124 0.062745101749897 0.021568628028035164 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+            texture_unit b2ogre_1323956836.688
+            {
+                texture grass2.jpg
+                tex_address_mode wrap
+                scale 1.0 1.0
+                colour_op replace
+            }
+            texture_unit b2ogre_1323956836.689
+            {
+                texture grass2_b.jpg
+                tex_address_mode wrap
+                scale 1.0 1.0
+                colour_op replace
+            }
+        }
+    }
+}

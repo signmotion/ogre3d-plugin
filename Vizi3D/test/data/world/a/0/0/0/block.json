@@ -1,0 +1,137 @@
+"name": "Цельные блоки",
+"description": "К цельным блокам относится и вода. Масштаб: 1 блок = 1 метр. Позиция в мире определяется названием папок. Включения уже декларированы в 'about.json'.",
+
+"path-to-resource": [
+    "D:/Projects/workspace/ogre3d/Vizi3D/media/form/object/cube",
+    "D:/Projects/workspace/ogre3d/Vizi3D/media/material"
+],
+
+
+"note-visual": {
+    "~": {
+        "name":     "Вода",
+        "form":     [ "block" ],
+        "material": [ "root/water" ],
+        "type":     "alpha"
+    },
+    "X": {
+        "name":     "Стена",
+        "form":     [ "block" ],
+        "material": [ "root/rock/slate" ],
+        "type":     "solid"
+    }
+},
+
+
+"content-floor": [
+    [
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       "
+    ],
+    [
+        "X ~ ~ X X X X X X X X X X X X X X X X X",
+        "X ~ ~ X X X X X X X X X X X X X X X X X",
+        "X ~ ~ X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X ~ X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X"
+    ],
+    [
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X ~ X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X"
+    ],
+    [
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X ~ ~ X X X X X X X X X X X X X X",
+        "X X X X ~ ~ ~ ~ ~ X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X"
+    ],
+    [
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X",
+        "X X X X X X X X X X X X X X X X X X X X"
+    ]
+]

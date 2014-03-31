@@ -1,0 +1,163 @@
+"name": "Объекты",
+"description": "Все элементы - размеров 1x1. @todo Могут масштабироваться.",
+
+"path-to-resource": [
+    "D:/Projects/workspace/ogre3d/Vizi3D/media/form/object/curve-pyramid",
+    "D:/Projects/workspace/ogre3d/Vizi3D/media/form/object/sphere",
+    "D:/Projects/workspace/ogre3d/Vizi3D/media/material"
+],
+
+
+"note-common": {
+    "p": {
+        "name": "Кривая пирамида",
+        "description": "Введена для визуального контроля правильности размещения элементов."
+    },
+    "s": {
+        "name": "Сфера",
+        "description": "@todo Физика?"
+    }
+},
+
+
+"note-visual": {
+    "p": {
+        "form":     [ "curve-pyramid" ],
+        "material": [ "root/metal/gold" ],
+        "type":     "alpha"
+    },
+    "s": {
+        "form":     [ "sphere" ],
+        "material": [ "root/metal/aluminum" ],
+        "type":     "alpha"
+    }
+},
+
+
+"note-physics": {
+    "p": {
+        "mass": 1000.0,
+        "material": "gold",
+        "state": "rigid"
+    }
+    "s": {
+        "mass": 50.0,
+        "material": "aluminum",
+        "state": "rigid",
+        "accurate-coord": [ 0.3, -0.8, 0.0 ]
+    }
+},
+
+
+"content-floor": [
+    [
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                  s    ",
+        "                                       ",
+        "                                      p"
+    ],
+    [
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       "
+    ],
+    [
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       "
+    ],
+    [
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       "
+    ],
+    [
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       "
+    ]
+]

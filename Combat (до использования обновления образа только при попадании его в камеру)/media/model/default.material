@@ -1,0 +1,33 @@
+
+material combat/undefined {
+    technique {
+        pass {
+            texture_unit {
+                texture undefined.jpg
+            }
+        }
+    }
+}
+
+
+
+material combat/red {
+	technique {
+		pass {
+			ambient 0.5 0.5 0.5
+			diffuse 0.8 0 0
+			specular 0.5 1 1 1
+        }
+	}
+}
+
+
+material combat/white {
+	technique {
+		pass {
+			ambient 0.5 0.5 0.5
+			diffuse 1 1 1
+			specular 1 1 1 1
+        }
+	}
+}

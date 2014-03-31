@@ -1,0 +1,56 @@
+// Image for 2D model
+
+material landscape25/test {
+    technique {
+        pass {
+            texture_unit {
+                texture undefined.jpg
+            }
+        }
+    }
+}
+
+
+
+material landscape25/red {
+	technique {
+		pass {
+			ambient 0.5 0.5 0.5
+			diffuse 0.8 0 0
+			specular 0.5 1 1 1
+        }
+	}
+}
+
+
+material landscape25/white {
+	technique {
+		pass {
+			ambient 0.5 0.5 0.5
+			diffuse 1 1 1
+			specular 1 1 1 1
+        }
+	}
+}
+
+
+material landscape25/2d {
+	technique {
+		pass {
+            lighting off
+            scene_blend alpha_blend
+            depth_write on
+            
+			texture_unit A {
+				texture undefined.jpg
+                tex_address_mode clamp
+			}
+		}
+	}
+}
+
+
+
+//material landscape25/2d/area/desert : bg {
+//    set_texture_alias A 2d/area/desert/1.png
+//}

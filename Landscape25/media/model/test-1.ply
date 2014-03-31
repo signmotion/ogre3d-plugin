@@ -1,0 +1,23 @@
+ply
+format ascii 1.0
+comment Created by Blender 2.57 (sub 1) - www.blender.org, source file: 'test-1.blend'
+element vertex 5
+property float x
+property float y
+property float z
+property float nx
+property float ny
+property float nz
+property float s
+property float t
+element face 3
+property list uchar uint vertex_indices
+end_header
+0.000000 0.000000 0.000000 0.000000 -1.000000 0.000000 0.286449 0.714577 
+-1.000000 -0.000000 -1.000000 0.000000 -1.000000 0.000000 0.003607 0.997419 
+1.000000 -0.000000 -1.000000 0.000000 -1.000000 0.000000 0.569292 0.997419 
+1.000000 0.000000 -0.000000 0.000000 -1.000000 0.000000 0.569292 0.714577 
+-1.000000 0.000000 2.000000 0.000000 -1.000000 0.000000 0.003606 0.148891 
+3 0 1 2
+3 3 0 2
+3 0 4 1

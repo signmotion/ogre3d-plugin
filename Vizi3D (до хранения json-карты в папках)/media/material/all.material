@@ -1,0 +1,100 @@
+material root/metal/gold
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture root/metal/gold.jpg
+			}
+		}
+	}
+}
+
+
+
+material root/rock/slate
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture root/rock/slate.jpg
+			}
+		}
+	}
+}
+
+
+
+material root/water
+{
+	technique
+	{
+		pass
+		{
+            scene_blend alpha_blend
+            depth_write off
+			texture_unit
+			{
+				texture root/water.png
+			}
+		}
+	}
+}
+
+
+
+material vegetation/green-grass
+{
+	technique
+	{
+		pass
+		{
+            // @see http://www.ogre3d.ru/forum/viewtopic.php?f=8&t=4018&start=10#p47372
+            depth_bias 1
+			texture_unit
+			{
+				texture vegetation/grass.jpg
+			}
+		}
+	}
+}
+
+
+
+material vegetation/yellow-grass
+{
+	technique
+	{
+		pass
+		{
+            // @see http://www.ogre3d.ru/forum/viewtopic.php?f=8&t=4018&start=10#p47372
+            depth_bias 1
+			texture_unit
+			{
+				texture vegetation/grass-autumn.jpg
+			}
+		}
+	}
+}
+
+
+
+
+material _missing_material_
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture undefined.jpg
+			}
+		}
+	}
+}

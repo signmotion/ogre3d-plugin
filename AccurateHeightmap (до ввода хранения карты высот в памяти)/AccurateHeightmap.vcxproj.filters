@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\AccurateHeightmap.cpp" />
+    <ClCompile Include="src\helper.cpp" />
+    <ClCompile Include="src\AHeightmap.cpp" />
+    <ClCompile Include="src\TrendManager.cpp" />
+    <ClCompile Include="src\Trend.cpp" />
+    <ClCompile Include="src\PlatoTrend.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AccurateHeightmap.h" />
+    <ClInclude Include="include\helper.h" />
+    <ClInclude Include="include\default.h" />
+    <ClInclude Include="include\AHeightmap.h" />
+    <ClInclude Include="include\TrendManager.h" />
+    <ClInclude Include="include\Trend.h" />
+    <ClInclude Include="include\PlatoTrend.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\OpenCL\const.hcl" />
+    <None Include="resource\OpenCL\helper.hcl" />
+    <None Include="resource\OpenCL\interaction.hcl" />
+    <None Include="resource\OpenCL\pragma.hcl" />
+    <None Include="resource\OpenCL\struct.hcl" />
+    <None Include="resource\OpenCL\pulse.cl" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A1F85FC2-3E68-446F-9F4A-7ED4BB68DAE6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D9DFF582-1D62-47C3-A56D-4F4BF917F3D7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

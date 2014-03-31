@@ -1,0 +1,29 @@
+{
+
+"name": "Блок стен, размер 1x1x1",
+"scale": 1000,
+
+"path-to-image": {
+    "form": "D:/Projects/workspace/ogre3d/Vizi3D/media/form",
+    "material": "D:/Projects/workspace/ogre3d/Vizi3D/media/texture"
+},
+
+"map-z-Test": {
+    "position": [ 0, 0, 0 ],
+    "content": [
+        [
+            "X"
+        ]
+    ]
+},
+
+"note": {
+    "X": {
+        "name": "Стена",
+        "form": "block-1x1",
+        "material": "root/rock/slate",
+        "type": "solid"
+    }
+}
+
+}

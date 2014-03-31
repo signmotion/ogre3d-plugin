@@ -1,0 +1,33 @@
+// Ѕиллборды
+material accuratemap/bs/doxel {
+    technique {
+        pass {
+            lighting off
+            //scene_blend alpha_blend
+            //scene_blend add
+            //depth_write off
+            //depth_check on
+            texture_unit {
+                // »зображение должно содержать отступы, чтобы при вращении
+                // избежать артефактов
+                texture doxel.png
+                // ѕлюс без этой строки у биллборда всегда по€вл€ютс€ артефакты
+                // при вращении
+                //tex_address_mode clamp
+            }
+        }
+    }
+}
+
+
+
+material accuratemap/bs/test-doxel {
+    technique {
+        pass {
+            lighting off
+            texture_unit {
+                texture test-doxel.png
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+// Ѕиллборды дл€ дыма
+
+/**
+* ячейка полностью заполнена дымом.
+*/
+material smokeport2d/smoke-0
+{
+    technique
+    {
+        pass
+        {
+            lighting off
+            scene_blend alpha_blend
+            depth_write off
+
+            texture_unit
+            {
+                texture 101-smoke-0.png
+                //tex_address_mode clamp
+            }
+        }
+    }
+}

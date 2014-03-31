@@ -1,0 +1,137 @@
+"name": "Где растёт трава",
+"description": "Выделено в отдельный слой, т.к. трава может находиться под водой (в блоке воды, см. 'block.json').",
+
+"path-to-resource": [
+    "D:/Projects/workspace/ogre3d/Vizi3D/media/form/surface/plane",
+    "D:/Projects/workspace/ogre3d/Vizi3D/media/material"
+],
+
+
+"note-visual": {
+    "g": {
+        "name":     "Зелёная трава",
+        "form":     [ "plane" ],
+        "material": [ "vegetation/green-grass" ],
+        "type":     "alpha"
+    },
+    "y": {
+        "name":     "Жёлтая трава",
+        "form":     [ "plane" ],
+        "material": [ "vegetation/yellow-grass" ],
+        "type":     "alpha"
+    }
+},
+
+
+"content-floor": [
+    [
+        "y     y g g g g g g g g g g g g g g g g",
+        "y     y g g g g g g g g g g g g g g g g",
+        "y     y g g g g g g g g g g g g g g g g",
+        "y y y y g g g y y y g g g g g g g g g g",
+        "g g g g g g g y   y g g g g g g g g g g",
+        "g g g g g g g y y y g g g g g g g g g g",
+        "g g g g g g g g g g g g g g g g g g g g",
+        "g g g g g g g g g g g g g g g g g g g g",
+        "g g g g g g g g g g g g g g g g g g g g",
+        "g g g g g g g g g g g g g g g g g g g g",
+        "g g g g g g g g g g g g g g g g g g g g",
+        "g g g g g g g g g g g g g g g g g g g g",
+        "g g g g g g g g g g g g g g g g g g g g",
+        "g g g g g g g g g g g g g g g g g g g g",
+        "g g g g g g g g g g g g g g g g g g g g",
+        "g g g g g g g g g g g g g g g g g g g g",
+        "g g g g g g g g g g g g g g g g g g g g",
+        "g g g g g g g g g g g g g g g g g g g g",
+        "g g g g g g g g g g g g g g g g g g g g",
+        "g g g g g g g g g g g g g g g g g g g g"
+    ],
+    [
+        "  y y                                  ",
+        "  y y                                  ",
+        "  y y                                  ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       "
+    ],
+    [
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "          y y                          ",
+        "          y y y y                      ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       "
+    ],
+    [
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       "
+    ],
+    [
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       ",
+        "                                       "
+    ]
+]

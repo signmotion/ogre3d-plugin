@@ -1,0 +1,52 @@
+{
+
+"name": "Блоки стен, размеры 4x3x2 и 1x1x1",
+"scale": 1000,
+
+"path-to-image": {
+    "form": "D:/Projects/workspace/ogre3d/Vizi3D/media/form",
+    "material": "D:/Projects/workspace/ogre3d/Vizi3D/media/texture"
+},
+
+"map-z-TestA": {
+    "position": [ 0, 0, 0 ],
+    "content": [
+        [
+            "XXXX",
+            "XXXX",
+            "XXXX"
+        ],
+        [
+            "XXXX",
+            "XXXX",
+            "XXXX"
+        ]
+    ]
+},
+
+"map-z-TestB": {
+    "position": [ 0, 1, -1 ],
+    "scale": 1500
+    "content": [
+        [
+            "~"
+        ]
+    ]
+},
+
+"note": {
+    "X": {
+        "name": "Стена",
+        "form": "block/1x1",
+        "material": "root/rock/slate",
+        "type": "solid"
+    },
+    "~": {
+        "name": "Вода",
+        "form": "block/1x1",
+        "material": "root/water",
+        "type": "alpha"
+    }
+}
+
+}

@@ -1,0 +1,37 @@
+// Текстуры для карты A
+
+
+material accuratemap/undefined {
+    technique {
+        pass {
+            texture_unit {
+                texture undefined.jpg
+            }
+        }
+    }
+}
+
+
+
+
+
+material accuratemap/white {
+    technique {
+        pass {
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1 1 1 1
+        }
+    }
+}
+
+
+material accuratemap/red {
+    technique {
+        pass {
+			ambient 1.0 0.0 0.0
+			diffuse 1.0 0.0 0.0
+			specular 1 0 0 0
+        }
+    }
+}

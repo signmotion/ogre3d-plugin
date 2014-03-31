@@ -1,0 +1,117 @@
+﻿<project name="DFV" basedir="." default="make">
+
+
+  <description>
+    Сборка моделей - Dwarf Fortress Viewer
+  </description>
+
+
+  <!-- Расширения -->
+  <taskdef resource="net/sf/antcontrib/antlib.xml">
+    <classpath><pathelement location="C:/ant/lib/ant-contrib.jar" /></classpath>
+  </taskdef>
+
+  
+  <property name="workspace" value="D:/Projects/workspace/dfv/dfv/media/model" />
+  <property name="project.name" value="dfv" />
+  <property name="source" location="${workspace}" />
+
+  
+
+  <!-- Вспомогательные значения -->
+  <property name="nl" value="&#13;&#10;"/>
+
+
+
+
+  
+  
+  <target name="convert-xml-to-mesh" depends="init">
+
+    <echo>Создаёт из БАЗОВЫХ XML-файлов БАЗОВОЕ множество mesh-файлов</echo>
+    <echo>(!) Модели должны быть нормализованы. Чтобы нормализовать размеры мешей в Blender для модели нажимается Ctrl+A</echo>
+
+    <echo>${nl}Конвертируем базовые модели *.mesh.xml -> *.mesh</echo>
+    <apply executable="C:/OgreSDK/ogre/bin/debug/OgreXMLConverter_d">
+      <arg value="-q"/>
+      <fileset dir="${source}" includes="**/*.mesh.xml" excludes="**/\+/**" />
+      <srcfile/>
+    </apply>
+
+    <echo>${nl}Обновляем полученные модели</echo>
+    <apply executable="C:/OgreSDK/ogre/bin/debug/OgreMeshUpgrader_d">
+      <fileset dir="${source}" includes="**/*.mesh" excludes="**/\+/**/*.mesh" />
+      <srcfile/>
+    </apply>
+
+  </target>
+  
+
+
+
+  
+  
+
+
+  <target name="init">
+
+    <echo>Инициализация</echo>
+
+    <buildnumber />
+    <echo>Номер сборки: ${build.number}</echo>
+
+    <tstamp>
+        <format property="touch.time" pattern="dd-MM-yyyy HH:mm" />
+    </tstamp>
+    <echo>Время сборки: ${touch.time}</echo>
+
+  </target>
+
+
+
+  
+  
+  
+  
+  <target name="clear-prepare" depends="init">
+
+    <!-- Нельзя. Собрано много mesh-моделей для включения в проект.
+    <echo>${nl}Удаляем все модели в формате 'mesh'</echo>
+    <echo>Будем строить их заново из XML 'mesh'</echo>
+    <delete>
+      <fileset dir="${source}" includes="**/*.mesh" excludes="test/*.mesh"/>
+    </delete>
+    -->
+
+  </target>
+
+
+
+
+
+  <!-- Старт-блок -->
+  <target name="make" depends="init, clear-prepare, convert-xml-to-mesh">
+
+    <echo>${nl}Удаляем бесполезные лог-файлы</echo>
+    <delete>
+      <fileset dir="${source}" includes="**/*.log" excludes="build.log" />
+    </delete>
+
+
+    <resourcecount property="count-mesh">
+      <fileset dir="${source}" includes="**/*.mesh" excludes="**/\+/**/*.mesh" />
+    </resourcecount>
+    <echo>${nl}Количество моделей &gt; ${count-mesh}</echo>
+
+    <resourcecount property="count-material">
+      <fileset dir="${source}" includes="**/*.material" excludes="**/\+/**/*.material" />
+    </resourcecount>
+    <echo>${nl}Количество материалов &gt; ${count-material}</echo>
+
+
+    <echo>${nl}Сборка проекта завершена</echo>
+
+  </target>
+
+
+</project>

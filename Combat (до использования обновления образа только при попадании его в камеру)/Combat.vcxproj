@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{ADA2F805-009F-49DE-A5DA-34FA1CBEE6DC}</ProjectGUID>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>Sample_Combat</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\OgreSDK\ogre\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">V:\temp\Sample_Combat.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Sample_Combat_d</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\OgreSDK\ogre\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">temp\Sample_Combat.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Sample_Combat</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\OgreSDK\ogre\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Sample_Combat.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Sample_Combat</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\OgreSDK\ogre\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Sample_Combat.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Sample_Combat</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(NEWTON_HOME)/coreLibrary_200/source/newton;$(NEWTON_HOME)/packages/dMath;C:/OgreSDK/ogre/OgreMain/include;C:/OgreSDK/ogre/include;C:/OgreSDK/ogre/Dependencies/include;C:/OgreSDK/ogre/Dependencies/include/OIS;C:/OgreSDK/ogre/Dependencies/include/Cg;C:/Program Files/Microsoft DirectX SDK (June 2010)/Include;$(BOOST_ROOT);C:/OgreSDK/ogre/OgreMain/include/Threading;C:/OgreSDK/ogre/Samples/Common/include;C:/OgreSDK/ogre/Components/RTShaderSystem/include;D:\Projects\workspace\utils\lpng156;D:\Projects\workspace\ogre3d\Combat\include;D:\Projects\workspace\utils\gtest-1.6.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;USE_RTSHADER_SYSTEM;CMAKE_INTDIR="Debug";Sample_Combat_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/OgreSDK/ogre/bin/Debug/Sample_Combat_d.pdb</ProgramDataBaseFileName>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <CompileAsManaged>false</CompileAsManaged>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <SmallerTypeCheck>true</SmallerTypeCheck>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;USE_RTSHADER_SYSTEM;CMAKE_INTDIR=\"Debug\";Sample_Combat_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/OgreSDK/ogre/OgreMain/include;C:/OgreSDK/ogre/include;C:/OgreSDK/ogre/Dependencies/include;C:/OgreSDK/ogre/Dependencies/include/OIS;C:/OgreSDK/ogre/Dependencies/include/Cg;C:/Program Files/Microsoft DirectX SDK (June 2010)/Include;C:/boost_1_47_0;C:/OgreSDK/ogre/OgreMain/include/Threading;C:/OgreSDK/ogre/Samples/Common/include;C:/OgreSDK/ogre/Components/RTShaderSystem/include;D:\Projects\workspace\ogre3d\Combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/OgreSDK/ogre/OgreMain/include;C:/OgreSDK/ogre/include;C:/OgreSDK/ogre/Dependencies/include;C:/OgreSDK/ogre/Dependencies/include/OIS;C:/OgreSDK/ogre/Dependencies/include/Cg;C:/Program Files/Microsoft DirectX SDK (June 2010)/Include;C:/boost_1_47_0;C:/OgreSDK/ogre/OgreMain/include/Threading;C:/OgreSDK/ogre/Samples/Common/include;C:/OgreSDK/ogre/Components/RTShaderSystem/include;D:\Projects\workspace\ogre3d\Combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dMath.lib;newton.lib;libpng15.lib;gtestd.lib;$(OGRE_HOME)\lib\Debug\OgreMain_d.lib;$(OGRE_HOME)\lib\Debug\OgreRTShaderSystem_d.lib;$(OGRE_HOME)\Dependencies\lib\debug\OIS_d.lib;$(OGRE_HOME)\Dependencies\lib\debug\freetype2311_d.lib;$(OGRE_HOME)\Dependencies\lib\debug\FreeImaged.lib;$(OGRE_HOME)\Dependencies\lib\debug\zziplibd.lib;$(OGRE_HOME)\Dependencies\lib\debug\zlibd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NEWTON_HOME)\packages\Win32\releaseDll;$(NEWTON_HOME)\packages\Win32\release;$(BOOST_ROOT)\stage\lib;D:\Projects\workspace\utils\lpng156\projects\vstudio\Debug;D:\Projects\workspace\utils\gtest-1.6.0\msvc\gtest-md\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/OgreSDK/ogre/lib/Debug/Sample_Combat_d.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ProgramDataBaseFileName>C:/OgreSDK/ogre/bin/Debug/Sample_Combat_d.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>0.0</Version>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(NEWTON_HOME)/coreLibrary_200/source/newton;C:/OgreSDK/ogre/OgreMain/include;C:/OgreSDK/ogre/include;C:/OgreSDK/ogre/Dependencies/include;C:/OgreSDK/ogre/Dependencies/include/OIS;C:/OgreSDK/ogre/Dependencies/include/Cg;C:/Program Files/Microsoft DirectX SDK (June 2010)/Include;C:/boost_1_47_0;C:/OgreSDK/ogre/OgreMain/include/Threading;C:/OgreSDK/ogre/Samples/Common/include;C:/OgreSDK/ogre/Components/RTShaderSystem/include;D:\Projects\workspace\ogre3d\Combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USE_RTSHADER_SYSTEM;CMAKE_INTDIR="Release";Sample_Combat_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/OgreSDK/ogre/bin/Release/Sample_Combat.pdb</ProgramDataBaseFileName>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USE_RTSHADER_SYSTEM;CMAKE_INTDIR=\"Release\";Sample_Combat_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/OgreSDK/ogre/OgreMain/include;C:/OgreSDK/ogre/include;C:/OgreSDK/ogre/Dependencies/include;C:/OgreSDK/ogre/Dependencies/include/OIS;C:/OgreSDK/ogre/Dependencies/include/Cg;C:/Program Files/Microsoft DirectX SDK (June 2010)/Include;C:/boost_1_47_0;C:/OgreSDK/ogre/OgreMain/include/Threading;C:/OgreSDK/ogre/Samples/Common/include;C:/OgreSDK/ogre/Components/RTShaderSystem/include;D:\Projects\workspace\ogre3d\Combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/OgreSDK/ogre/OgreMain/include;C:/OgreSDK/ogre/include;C:/OgreSDK/ogre/Dependencies/include;C:/OgreSDK/ogre/Dependencies/include/OIS;C:/OgreSDK/ogre/Dependencies/include/Cg;C:/Program Files/Microsoft DirectX SDK (June 2010)/Include;C:/boost_1_47_0;C:/OgreSDK/ogre/OgreMain/include/Threading;C:/OgreSDK/ogre/Samples/Common/include;C:/OgreSDK/ogre/Components/RTShaderSystem/include;D:\Projects\workspace\ogre3d\Combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dMath.lib;newton.lib;$(OGRE_HOME)\lib\Debug\OgreMain.lib;$(OGRE_HOME)\lib\Debug\OgreRTShaderSystem.lib;$(OGRE_HOME)\Dependencies\lib\debug\OIS.lib;$(OGRE_HOME)\Dependencies\lib\debug\freetype2311.lib;$(OGRE_HOME)\Dependencies\lib\debug\FreeImage.lib;$(OGRE_HOME)\Dependencies\lib\debug\zziplib.lib;$(OGRE_HOME)\Dependencies\lib\debug\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(NEWTON_HOME)\packages\Win32\releaseDll;$(NEWTON_HOME)\packages\Win32\release;$(BOOST_ROOT)\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/OgreSDK/ogre/lib/Release/Sample_Combat.lib</ImportLibrary>
+      <ProgramDataBaseFileName>C:/OgreSDK/ogre/bin/Release/Sample_Combat.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/OgreSDK/ogre/OgreMain/include;C:/OgreSDK/ogre/include;C:/OgreSDK/ogre/Dependencies/include;C:/OgreSDK/ogre/Dependencies/include/OIS;C:/OgreSDK/ogre/Dependencies/include/Cg;C:/Program Files/Microsoft DirectX SDK (June 2010)/Include;C:/boost_1_47_0;C:/OgreSDK/ogre/OgreMain/include/Threading;C:/OgreSDK/ogre/Samples/Common/include;C:/OgreSDK/ogre/Components/RTShaderSystem/include;D:\Projects\workspace\ogre3d\Combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USE_RTSHADER_SYSTEM;CMAKE_INTDIR="MinSizeRel";Sample_Combat_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/OgreSDK/ogre/bin/MinSizeRel/Sample_Combat.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USE_RTSHADER_SYSTEM;CMAKE_INTDIR=\"MinSizeRel\";Sample_Combat_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/OgreSDK/ogre/OgreMain/include;C:/OgreSDK/ogre/include;C:/OgreSDK/ogre/Dependencies/include;C:/OgreSDK/ogre/Dependencies/include/OIS;C:/OgreSDK/ogre/Dependencies/include/Cg;C:/Program Files/Microsoft DirectX SDK (June 2010)/Include;C:/boost_1_47_0;C:/OgreSDK/ogre/OgreMain/include/Threading;C:/OgreSDK/ogre/Samples/Common/include;C:/OgreSDK/ogre/Components/RTShaderSystem/include;D:\Projects\workspace\ogre3d\Combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/OgreSDK/ogre/OgreMain/include;C:/OgreSDK/ogre/include;C:/OgreSDK/ogre/Dependencies/include;C:/OgreSDK/ogre/Dependencies/include/OIS;C:/OgreSDK/ogre/Dependencies/include/Cg;C:/Program Files/Microsoft DirectX SDK (June 2010)/Include;C:/boost_1_47_0;C:/OgreSDK/ogre/OgreMain/include/Threading;C:/OgreSDK/ogre/Samples/Common/include;C:/OgreSDK/ogre/Components/RTShaderSystem/include;D:\Projects\workspace\ogre3d\Combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\MinSizeRel\OgreMain.lib;..\..\lib\MinSizeRel\OgreRTShaderSystem.lib;..\..\Dependencies\lib\debug\OIS_d.lib;..\..\lib\MinSizeRel\OgreMain.lib;..\..\Dependencies\lib\debug\freetype2311_d.lib;..\..\Dependencies\lib\debug\FreeImaged.lib;..\..\Dependencies\lib\debug\zziplibd.lib;..\..\Dependencies\lib\debug\zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/OgreSDK/ogre/lib/MinSizeRel/Sample_Combat.lib</ImportLibrary>
+      <ProgramDataBaseFileName>C:/OgreSDK/ogre/bin/MinSizeRel/Sample_Combat.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/OgreSDK/ogre/OgreMain/include;C:/OgreSDK/ogre/include;C:/OgreSDK/ogre/Dependencies/include;C:/OgreSDK/ogre/Dependencies/include/OIS;C:/OgreSDK/ogre/Dependencies/include/Cg;C:/Program Files/Microsoft DirectX SDK (June 2010)/Include;C:/boost_1_47_0;C:/OgreSDK/ogre/OgreMain/include/Threading;C:/OgreSDK/ogre/Samples/Common/include;C:/OgreSDK/ogre/Components/RTShaderSystem/include;D:\Projects\workspace\ogre3d\Combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USE_RTSHADER_SYSTEM;CMAKE_INTDIR="RelWithDebInfo";Sample_Combat_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/OgreSDK/ogre/bin/RelWithDebInfo/Sample_Combat.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USE_RTSHADER_SYSTEM;CMAKE_INTDIR=\"RelWithDebInfo\";Sample_Combat_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/OgreSDK/ogre/OgreMain/include;C:/OgreSDK/ogre/include;C:/OgreSDK/ogre/Dependencies/include;C:/OgreSDK/ogre/Dependencies/include/OIS;C:/OgreSDK/ogre/Dependencies/include/Cg;C:/Program Files/Microsoft DirectX SDK (June 2010)/Include;C:/boost_1_47_0;C:/OgreSDK/ogre/OgreMain/include/Threading;C:/OgreSDK/ogre/Samples/Common/include;C:/OgreSDK/ogre/Components/RTShaderSystem/include;D:\Projects\workspace\ogre3d\Combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/OgreSDK/ogre/OgreMain/include;C:/OgreSDK/ogre/include;C:/OgreSDK/ogre/Dependencies/include;C:/OgreSDK/ogre/Dependencies/include/OIS;C:/OgreSDK/ogre/Dependencies/include/Cg;C:/Program Files/Microsoft DirectX SDK (June 2010)/Include;C:/boost_1_47_0;C:/OgreSDK/ogre/OgreMain/include/Threading;C:/OgreSDK/ogre/Samples/Common/include;C:/OgreSDK/ogre/Components/RTShaderSystem/include;D:\Projects\workspace\ogre3d\Combat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\RelWithDebInfo\OgreMain.lib;..\..\lib\RelWithDebInfo\OgreRTShaderSystem.lib;..\..\Dependencies\lib\debug\OIS_d.lib;..\..\lib\RelWithDebInfo\OgreMain.lib;..\..\Dependencies\lib\debug\freetype2311_d.lib;..\..\Dependencies\lib\debug\FreeImaged.lib;..\..\Dependencies\lib\debug\zziplibd.lib;..\..\Dependencies\lib\debug\zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/OgreSDK/ogre/lib/RelWithDebInfo/Sample_Combat.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ProgramDataBaseFileName>C:/OgreSDK/ogre/bin/RelWithDebInfo/Sample_Combat.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\LiveBody.cpp" />
+    <ClCompile Include="src\CollisionManager.cpp" />
+    <ClCompile Include="src\helper.cpp" />
+    <ClCompile Include="src\PhysicsPort.cpp" />
+    <ClCompile Include="src\Port.cpp" />
+    <ClCompile Include="src\RealtimePhysicsPort.cpp" />
+    <ClInclude Include="include\LiveBody.h" />
+    <ClInclude Include="include\CollisionManager.h" />
+    <ClInclude Include="include\default.h" />
+    <ClInclude Include="include\helper.h" />
+    <ClInclude Include="include\Combat.h" />
+    <ClCompile Include="src\Combat.cpp" />
+    <ClInclude Include="include\PhysicsPort.h" />
+    <ClInclude Include="include\Port.h" />
+    <ClInclude Include="include\RealtimePhysicsPort.h" />
+    <ClInclude Include="test\DoxelTest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/OgreSDK/ogre/OgreMain/OgreMain.vcxproj">
+      <Project>E2FFD732-5144-4558-BBFE-5B6DE17DDB00</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/OgreSDK/ogre/Components/RTShaderSystem/OgreRTShaderSystem.vcxproj">
+      <Project>B441BF7A-9192-4A11-B7F5-A152F2A4E0DD</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\map\a\elevation-without-water.png" />
+    <None Include="resource\OpenCL\const.hcl" />
+    <None Include="resource\OpenCL\helper.hcl" />
+    <None Include="resource\OpenCL\interaction.hcl" />
+    <None Include="resource\OpenCL\pragma.hcl" />
+    <None Include="resource\OpenCL\pulse.cl" />
+    <None Include="resource\OpenCL\struct.hcl" />
+    <None Include="test\data\elevation-without-water.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

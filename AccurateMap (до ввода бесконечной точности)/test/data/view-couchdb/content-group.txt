@@ -1,0 +1,19 @@
+/**
+* Выборка содержимого докселя с группировкой.
+*
+* @run http://127.0.0.1:5984/t-valueof_hmimage_8x8_maxdepth/_design/t/_view/c?limit=200&group=true
+*/
+
+
+map function(doc) {
+  const dc = doc.content;
+  emit(
+    doc.size + ' ' + dc.N + 'x' + dc.M
+  , 1
+  );
+}
+
+
+reduce function ( keys, values ) {
+    return sum( values );
+}

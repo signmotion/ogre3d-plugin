@@ -1,0 +1,68 @@
+// Текстуры для карты A
+
+
+material accurateheightmap/undefined {
+    technique {
+        pass {
+            texture_unit {
+                texture undefined.jpg
+            }
+        }
+    }
+}
+
+
+
+material accurateheightmap/biome {
+    technique {
+        pass {
+            lighting on
+            //depth_write off
+            depth_check on
+            texture_unit {
+                texture biome.png
+                //tex_address_mode clamp
+            }
+        }
+    }
+}
+
+
+
+material accurateheightmap/map {
+    technique {
+        pass {
+            lighting off
+            depth_write on
+            depth_check on
+            texture_unit {
+                texture map.png
+                tex_address_mode clamp
+            }
+        }
+    }
+}
+
+
+
+
+material accurateheightmap/white {
+    technique {
+        pass {
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1 1 1 1
+        }
+    }
+}
+
+
+material accurateheightmap/red {
+    technique {
+        pass {
+			ambient 1.0 0.0 0.0
+			diffuse 1.0 0.0 0.0
+			specular 1 0 0 0
+        }
+    }
+}

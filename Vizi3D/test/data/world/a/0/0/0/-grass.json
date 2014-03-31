@@ -1,0 +1,194 @@
+{
+
+"name": "Мир с водоёмами и растительностью",
+"description": "Масштаб: 1 блок = 1 метр",
+"scale": 100,
+
+"path-to-image": {
+    "form": "D:/Projects/workspace/ogre3d/Vizi3D/media/form",
+    "material": "D:/Projects/workspace/ogre3d/Vizi3D/media/texture"
+},
+
+"map-z-Solid": {
+    "name": "Цельные блоки",
+    "position": [ 0, 0, 0 ],
+    "content": [
+        [
+            "          ",
+            "          ",
+            "          ",
+            "          ",
+            "          "
+        ],
+        [
+            "X~~XXXXXXX",
+            "X~~XXXXXXX",
+            "X~~XXXXXXX",
+            "XXXXXXXX~X",
+            "XXXXXXXXXX"
+        ],
+        [
+            "XXXXXXXXXX",
+            "XXXXXXXXXX",
+            "XXXXXXXXXX",
+            "XXXXXXXX~X",
+            "XXXXXXXXXX"
+        ],
+        [
+            "XXXXXXXXXX",
+            "XXXXXXXXXX",
+            "XXXXXXXXXX",
+            "XXXXXXXX~X",
+            "XXXXXXXXXX"
+        ],
+        [
+            "XXXXXXXXXX",
+            "XXXXXXXXXX",
+            "XXXX~~XXXX",
+            "XXXX~~~~~X",
+            "XXXXXXXXXX"
+        ],
+        [
+            "XXXXXXXXXX",
+            "XXXXXXXXXX",
+            "XXXXXXXXXX",
+            "XXXXXXXXXX",
+            "XXXXXXXXXX"
+        ]
+    ]
+},
+
+"map-z-GreenGrassVegetation": {
+    "name": "Зелёная трава",
+    "position": [ 0, 0, 0 ],
+    "content": [
+        [
+            "y  ygggggg",
+            "y  ygggggg",
+            "y  ygggyyy",
+            "yyyygggy y",
+            "gggggggyyy"
+        ],
+        [
+            " yy       ",
+            " yy       ",
+            " yy       ",
+            "          ",
+            "          "
+        ],
+        [
+            "          ",
+            "          ",
+            "          ",
+            "          ",
+            "          "
+        ],
+        [
+            "          ",
+            "          ",
+            "          ",
+            "          ",
+            "          "
+        ],
+        [
+            "          ",
+            "          ",
+            "    yy    ",
+            "    yyyyy ",
+            "          "
+        ],
+        [
+            "          ",
+            "          ",
+            "          ",
+            "          ",
+            "          "
+        ]
+    ]
+},
+
+
+"map-z-ObjectSet": {
+    "name": "Набор объектов",
+    "position": [ 0, 0, 0 ],
+    "content": [
+        [
+            "          ",
+            "          ",
+            "          ",
+            "     p    ",
+            "          "
+        ],
+        [
+            "          ",
+            "          ",
+            "          ",
+            "          ",
+            "          "
+        ],
+        [
+            "          ",
+            "          ",
+            "          ",
+            "          ",
+            "          "
+        ],
+        [
+            "          ",
+            "          ",
+            "          ",
+            "          ",
+            "          "
+        ],
+        [
+            "          ",
+            "          ",
+            "          ",
+            "          ",
+            "          "
+        ],
+        [
+            "          ",
+            "          ",
+            "          ",
+            "          ",
+            "          "
+        ]
+    ]
+},
+
+
+"note": {
+    "~": {
+        "name": "Вода",
+        "form": "block-1x1",
+        "material": "root/water",
+        "type": "alpha"
+    },
+    "g": {
+        "name": "Зелёная трава",
+        "form": "plane-1x1",
+        "material": "vegetation/green-grass",
+        "type": "alpha"
+    },
+    "p": {
+        "name": "Кривая пирамида",
+        "form": "curve-pyramid-1x1",
+        "material": "root/metal/gold",
+        "type": "alpha"
+    },
+    "y": {
+        "name": "Жёлтая трава",
+        "form": "plane-1x1",
+        "material": "vegetation/yellow-grass",
+        "type": "alpha"
+    },
+    "X": {
+        "name": "Стена",
+        "form": "block-1x1",
+        "material": "root/rock/slate",
+        "type": "solid"
+    }
+}
+
+}

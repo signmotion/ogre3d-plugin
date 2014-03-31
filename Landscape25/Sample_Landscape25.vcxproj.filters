@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\Landscape25.cpp" />
+    <ClCompile Include="src\Trend.cpp" />
+    <ClCompile Include="src\Layer.cpp" />
+    <ClCompile Include="src\Biome.cpp" />
+    <ClCompile Include="src\helper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Landscape25.h" />
+    <ClInclude Include="include\Trend.h" />
+    <ClInclude Include="include\Layer.h" />
+    <ClInclude Include="include\Biome.h" />
+    <ClInclude Include="include\helper.h" />
+    <ClInclude Include="include\FeatureBiome.h" />
+    <ClInclude Include="include\FeatureLayer.h" />
+    <ClInclude Include="include\FeatureTrend.h" />
+    <ClInclude Include="include\default.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A1F85FC2-3E68-446F-9F4A-7ED4BB68DAE6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D9DFF582-1D62-47C3-A56D-4F4BF917F3D7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

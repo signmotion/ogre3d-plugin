@@ -1,0 +1,88 @@
+// Image for 2D model
+
+
+// Не указан материал при создании меша из Blender
+material _missing_material_ {
+    technique {
+        pass {
+			ambient 0.5 0.5 0.5
+			diffuse 1 0 0
+			specular 1 0 0 1
+        }
+    }
+}
+
+
+
+
+material physics2d/test {
+    technique {
+        pass {
+            texture_unit {
+                texture undefined.jpg
+            }
+        }
+    }
+}
+
+
+
+material physics2d/red {
+	technique {
+		pass {
+			ambient 0.5 0.5 0.5
+			diffuse 0.8 0 0
+			specular 0.5 1 1 1
+        }
+	}
+}
+
+
+material physics2d/white {
+	technique {
+		pass {
+			ambient 0.5 0.5 0.5
+			diffuse 1 1 1
+			specular 1 1 1 1
+        }
+	}
+}
+
+
+/*
+material physics2d/2d {
+	technique {
+		pass {
+            lighting off
+            scene_blend alpha_blend
+            depth_write off            
+			texture_unit A {
+				texture undefined.jpg
+                tex_address_mode clamp
+			}
+		}
+	}
+}
+*/
+
+
+// Биллборды
+material physics2d/bs/sphere.png {
+    technique {
+        pass {
+            lighting off
+            //scene_blend alpha_blend
+            scene_blend add
+            depth_write off
+            depth_check on
+            texture_unit {
+                // Изображение должно содержать отступы, чтобы при вращении
+                // избежать артефактов
+                texture sphere.png
+                // Плюс без этой строки у биллборда всегда появляются артефакты
+                // при вращении
+                tex_address_mode clamp
+            }
+        }
+    }
+}
